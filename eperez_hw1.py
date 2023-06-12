@@ -19,7 +19,7 @@ birth_year = curr_year - age
 print('Birth Year: ' + str(birth_year))
 
 #5, 6
-bio = name + ' is ' + str(age) + ' years old and is a student '
+bio = name + ' is ' + str(age) + ' years old and is a student.'
 print(bio)
 
 #7, 8, 9 , 10
