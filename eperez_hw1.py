@@ -9,8 +9,8 @@ age = 25
 is_student = True
 
 #2
-print('Name:' + name)
-print('Age:' + str(age))
+print('Name: ' + name)
+print('Age: ' + str(age))
 print('is_student: ' + str(is_student))
 
 #3, 4
