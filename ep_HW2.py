@@ -21,7 +21,7 @@ def is_even(number):
         return False
 
 def calculate_volume(length, width, height):
-    #calcualte base area with calculate_area function
+    #calculate base area with calculate_area function
     base_area = calculate_area(length, width)
 
     return base_area * height
