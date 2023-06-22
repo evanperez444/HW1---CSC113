@@ -27,7 +27,7 @@ def calculate_volume(length, width, height):
     return base_area * height
 
 def factorial(n):
-    if n == 1:
+    if n == 0 or n == 1:
         return n
     else:
         return factorial(n-1) * n
