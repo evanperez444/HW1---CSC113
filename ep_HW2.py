@@ -4,7 +4,7 @@
 
 #1.a.
 def greet(name):
-    print("Hello " + name + "!")
+    print("Hello " + name + "!\n")
 
 #1.b.
 
@@ -57,39 +57,49 @@ def get_median(nums):
 
         return get_average([medHigh, medLow])
 
-
+#2.a
 #Test greet function
 greet("Evan")
 
+#2.b
 #Test calculate area function
 print("Area: ")
 print(calculate_area(5,3))
+print("\n")
 
+#2.c
 #Test is even function
 print(is_even(10))
 print(is_even(8))
 print(is_even(5))
 print(is_even(3))
+print("\n")
 
+#3.b
 #Test calculate volume
 print("Volume: ")
-print(calculate_volume(4,3,3))
+print(calculate_volume(4,3,2))
+print("\n")
 
+#4.b
 #Test factorial function
 print("Factorials of 4, 5, 7, and 10: ")
 print(factorial(4))
 print(factorial(5))
 print(factorial(7))
 print(factorial(10))
-
+print("\n")
 
 #Test get average function
 print("Testing average function: ")
 print(get_average([70, 80, 90]))
+print("\n")
 
+#5
 #Test median
 print("Return median: ")
 print(get_median([1,2,3,4]))
 print(get_median([3,6,2,5,8]))
+
 
 
