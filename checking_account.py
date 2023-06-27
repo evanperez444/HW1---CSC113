@@ -3,8 +3,12 @@ class CheckingAccount:
     account_holder = ""
     account_balance = 0
 
-    def deposit(?):
+    def deposit(account_num, deposit_amount, account_balance=None):
+        account_balance += deposit_amount
 
-    def withdrawal(?):
+    def withdrawal(account_num, withdrawal_amount):
+        account_balance -= withdrawal_amount
 
-    def balance_inquiry(?):
+    def balance_inquiry(account_num):
+        print("Your current balance is " + str(account_balance))
+
