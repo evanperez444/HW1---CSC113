@@ -15,3 +15,11 @@ class SavingsAccount(Account):
             growth += (growth * self.interest_rate)
 
         print("In " + str(years) + " years, your account balance will be: " + str(growth) + "\n")
+
+    #displays account balance and interest rate
+    def balance_inquiry(self):
+        print("Your current balance is " + str(self.account_balance) + " and your interest rate is: " + str(self.interest_rate) + "\n" )
+
+    #changes interest rate
+    def change_interest_rate(self, rate):
+        self.interest_rate = rate

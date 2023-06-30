@@ -55,6 +55,8 @@ savings_acc1.withdrawal(60)
 
 savings_acc1.withdrawal(20)
 
+savings_acc1.change_interest_rate(0.5)
+
 savings_acc1.balance_inquiry()
 
 
