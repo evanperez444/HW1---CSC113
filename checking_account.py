@@ -1,14 +1,14 @@
 class CheckingAccount(Account):
 
-    account_balance = 0
+    def __init__(self, account_balance):
+        self.account_balance = account_balance
 
-    def deposit(account_num, deposit_amount, account_balance):
-        account_balance += deposit_amount
+    def deposit(self,deposit_amount):
+        self.account_balance += deposit_amount
 
-    def withdrawal(account_num, withdrawal_amount, account_balance):
-        account_balance -= withdrawal_amount
+    def withdrawal(self,withdrawal_amount):
+        self.account_balance -= withdrawal_amount
         print(str(withdrawal_amount) + "has been withdrawn from your account")
 
-    def balance_inquiry(account_num, account_balance):
-        print("Your current balance is " + str(account_balance))
-
+    def balance_inquiry(self):
+        print("Your current balance is " + str(self.account_balance))
