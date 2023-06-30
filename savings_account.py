@@ -1,6 +1,5 @@
-class SavingsAccount:
-    account_num = 0
-    account_holder = ""
+class SavingsAccount(Account):
+
     account_balance = 0
     interest_rate = 0
 
