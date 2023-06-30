@@ -1,0 +1,23 @@
+In this assignment, we were asked to create a bank management program that incorporates class hierarchies and inheritance.
+
+In my program, I have several classes:
+
+1.Bank
+2.Account
+3.Savings Account
+4.Checking Account
+
+
+
+ A bank object can be created and the user can add the name of the bank as well as two accounts (savings, and checking). The bank class and account class have a composition relationship, meaning that a bank “has a” account object. 
+
+The Account, Savings Account, and Checking Account have an inheritance relationship. A savings account “is a” account and a checking account “is a” account as well. This means that any attributes and methods that the account class has, the savings/checking accounts both inherit and can utilize. 
+
+
+In this context, an Account is a parent class while the savings/checking accounts are child classes. We can also add attributes and methods that piggyback off of the parent class. 
+
+The Account class contains account variables and methods that operate on those variables, an exemplification of encapsulation, which reduces the complexity of the program. Here, I developed methods that would be needed across all child classes like withdrawal, deposit, and balance inquiry. This is so I don’t have to redo every method for every class, especially if I want to add a new child class in the future.
+
+In my savings account class, I include an overridden method of balance inquiry that includes the interest rate with the balance inquiry. This would be an example of polymorphism as the balance inquiry method would be taking a new form. I have also added a method to be able to change the interest rate if need be. Other than this, the savings account class inherits all account methods and variables
+
+In my checking account class, I did not add any new methods or variables. This is because everything we need to manipulate a checking account is in the account class which is inherited in this child class. 
