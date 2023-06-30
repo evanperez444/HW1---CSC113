@@ -11,8 +11,11 @@ class Account:
         print("You deposited " + "$" + str(deposit_amount)+ "\n")
 
     def withdrawal(self,withdrawal_amount):
-        self.account_balance -= withdrawal_amount
-        print("$" + str(withdrawal_amount) + " has been withdrawn from your account" + "\n")
+        if self.account_balance > 0 and self.account_balance - withdrawal_amount >= 0:
+            self.account_balance -= withdrawal_amount
+            print("$" + str(withdrawal_amount) + " has been withdrawn from your account" + "\n")
+        else:
+            print("Withdrawl Failed: Insuffucient Funds\n")
 
     def balance_inquiry(self):
         print("Your current balance is " + str(self.account_balance)+ "\n")
