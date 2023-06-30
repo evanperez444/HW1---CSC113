@@ -1,17 +1,13 @@
+from account import Account
 class SavingsAccount(Account):
-
-    def __init__(self, account_balance, interest_rate):
-        self.account_balance = account_balance
+    def __init__(self, account_num, account_holder, holder_address, account_balance, interest_rate):
+        super().__init__(account_num, account_holder, holder_address, account_balance)
         self.interest_rate = interest_rate
 
-    def deposit(self,deposit_amount):
-        self.account_balance += deposit_amount
+    def project_annual_interest(self, years):
 
-    def withdrawal(self,withdrawal_amount):
-        self.account_balance -= withdrawal_amount
-        print(str(withdrawal_amount) + "has been withdrawn from your account")
+        growth = self.account_balance
+        for n in range(years):
+            growth += (growth * self.interest_rate)
 
-    def balance_inquiry(self):
-        print("Your current balance is " + str(self.account_balance))
-
-
+        print("In " + str(years) + " years, your account balance will be: " + str(growth))
