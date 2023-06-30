@@ -1,6 +1,12 @@
 from account import Account
 from savings_account import SavingsAccount
 from checking_account import CheckingAccount
+
+#The Bank class allows the user to creat a bank object that contains:
+#-The name of the bank
+#-A checking account
+#-A savings account
+#*the checking and savings account must be premade since the bank constructor takes 3 arguments: bank name, savings account, checking_account
 class Bank:
 
     def __init__(self, name, acc1_obj, acc2_obj):
@@ -28,7 +34,7 @@ checking_acc1.balance_inquiry()
 
 checking_acc1.withdrawal(120)
 
-checking_acc1.withdrawal(60)
+checking_acc1.withdrawal(60) #test withdrawal edge case
 
 checking_acc1.balance_inquiry()
 
@@ -41,13 +47,17 @@ savings_acc1.deposit(60)
 
 savings_acc1.balance_inquiry()
 
-savings_acc1.withdrawal(120)
+savings_acc1.project_annual_interest(10)
+
+savings_acc1.withdrawal(120) #test withdrawal edge case
 
 savings_acc1.withdrawal(60)
 
+savings_acc1.withdrawal(20)
+
 savings_acc1.balance_inquiry()
 
-savings_acc1.project_annual_interest(10)
+
 
 
 
