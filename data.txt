@@ -1,0 +1,5 @@
+Hello, World!
+Here is a set of sample text 
+This is for homework 4
+For our python programming class
+Learning a lot so far!
